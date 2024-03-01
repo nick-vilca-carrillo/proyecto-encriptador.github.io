@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="columna1">
+            <div class="logo">
+                <img src="imagenes/Logo.png">
+
+            </div>
+            <div class="texto">
+                <textarea id="texto" class="texto" placeholder="Ingrese el texto aqui" oninput="minusculas(); ActualizarColumna2()"></textarea>
+            </div>
+            <div class="icono">
+                <img src="imagenes/icono.png" width="20px">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button class="Encriptador" onclick="Encriptador()">Encriptar</button>
+                <button class="Desencriptador" onclick="Desencriptador()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="columna2" id="columna2">
+            <div class="logo2">
+                <img src="imagenes/Muñeco.png">
+            </div>
+            <div class="mensaje2">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="texto2">
+                    <textarea id="mensaje" class="mensaje"></textarea>
+                <div class="boton2">
+                    <button class="Copiado" onclick="Copiado()">Copiado</button>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="encriptador.js"></script>
+</body>
+
+</html>
+

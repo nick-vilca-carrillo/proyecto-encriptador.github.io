@@ -1,0 +1,268 @@
+body {
+    height: 100%;
+    margin: 10px;
+  background-color: rgb(238, 251, 255);
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.columna1 {
+   
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+   
+}
+
+.logo {
+    flex: 1;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.texto {
+    flex: 5;
+    margin-bottom: 20px;
+    margin-left: 120px;
+   
+}
+.texto textarea {
+    border:none;
+    outline: none; 
+    resize: none;
+    font-size: 30px;
+    width: 630px;
+    height: 450px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(238, 251, 255);
+    overflow: hidden;
+    margin-left: 100px;
+}
+.texto textarea::placeholder {
+    font-size: 30px;
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.icono {
+    display: flex;
+    align-items: center;
+    margin-left: 220px;
+}
+
+.botones {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.Encriptador:active,
+.Desencriptador:active,
+.Copiado:active {
+    background-color: gray; 
+}
+.Encriptador{
+    color: white;
+    width: 300px;
+    height: 67px;
+    margin-right: 30px;
+    border-radius: 32px;
+    background-color: darkblue;
+    cursor: pointer;
+}
+.Desencriptador{
+    width: 300px;
+    height: 67px;
+    border-radius: 32px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+.columna2{
+    border-radius: 15px;
+    margin:20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.texto2 textarea{
+    border: none ;
+    outline: none; 
+    resize: none;
+    font-size: 30px;
+    width: 400px;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+.Copiado{
+    width: 328px;
+    height: 67px;
+    border-radius: 15px;
+    color: darkblue;
+    cursor: pointer;
+}
+.boton2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 80px;
+    
+}
+
+/* Estilos específicos para celular*/
+@media screen and (max-width: 376px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .columna1, .columna2 {
+        width: 300px;
+        padding: 20px;
+        margin: 0;
+
+    }
+    .columna2{
+        margin-left: 40px;
+    }
+
+    .texto textarea, .mensaje textarea {
+        width: 350px;
+        height: 450px;
+        resize: none;
+        margin: 0;
+        font-size: 30px;
+    }
+    .texto2 textarea{
+       width: 280px;
+        height: 450px;
+    }
+    .texto{
+        margin-left: 2px;
+        display: flex;      
+    }
+  
+    .botones {
+        display: block;
+        margin: 0;
+    }
+    .Encriptador{
+        color: white;
+        width: 332px;
+        height: 67px;
+        border-radius: 24px;
+    }
+    .Desencriptador{
+        width: 332px;
+        height: 67px;
+        border-radius: 24px;
+        margin-top: 20px;
+    }
+    .icono {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin:0;
+    }
+    .columna2 img {
+        display: none;
+    }
+    .Copiado{
+        width: 279px;
+        height: 67px;
+        border-radius: 1px;
+    }
+   
+}
+/* Estilos específicos para tablet*/
+@media screen and (max-width: 769px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .columna1, .columna2 {
+        width: 750px;
+        padding: 20px;
+        margin: 0;
+
+    }
+
+    .texto textarea, .mensaje textarea {
+        width: 750px;
+        height: 500px;
+        resize: none;
+        margin: 40px;
+        font-size: 30px;
+        margin-top: 70px;
+    }
+    .texto2 textarea{
+       width: 688px;
+         height: 343px;
+    
+    }
+    .texto{
+        margin-left: 2px;
+        display: flex;      
+    }
+  
+    .botones {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Encriptador{
+        color: white;
+        width: 300px;
+        height: 50px;
+        border-radius: 32px;
+        
+    }
+    .Desencriptador{
+        width: 300px;
+        height: 50px;
+        border-radius: 32px;
+       
+    }
+    .icono {
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .columna2 img {
+        display: none;
+    }
+    .Copiado{
+        width: 624px;
+        height: 67px;
+        border-radius: 32px;
+
+    }
+  
+}
+
+
+
+
+
+
