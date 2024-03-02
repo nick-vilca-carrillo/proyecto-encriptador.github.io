@@ -194,7 +194,7 @@ body {
    
 }
 /* Estilos específicos para tablet*/
-@media screen and (max-width: 769px) {
+/*@media screen and (max-width: 769px) {
     .main {
         flex-direction: column;
         align-items: center;
@@ -260,7 +260,7 @@ body {
     }
   
 }
-
+*/    
 
 
 
